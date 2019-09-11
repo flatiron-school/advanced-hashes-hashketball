@@ -28,8 +28,9 @@ returns a hash nested in the following manner:
 * The `:team_name` key points to a string of the team name.
 * The `:colors` key points to an array of strings that are that team's colors.
 * The `:players` key points to an `Array` of `Hash`es. Each `Hash` in the array
-  should contain the players' stats as listed below and their stats can be
-  found in the table below. The stats keys should be formatted like this:
+  should contain a key of a player's name (as a string) that points to a hash 
+  containing the player's stats as found in the table below. 
+  The stats keys should be formatted like this:
   * `:number`
   * `:shoe`
   * `:points`
